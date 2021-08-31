@@ -39,7 +39,7 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
 2. now we must change some setting
 
     - Go to `Settings`.
-    - In the left side go to `Storage` and press in `Controller: IDE   O+` and click in `Add` then chose the `kali-linux iso file`  and press ok.
+    - In the left side go to `Storage` and press in `Controller: IDE   O+` and click in `Add` then chose the `kali-linux.iso file`  and press ok.
     - Go to the `Network` and select `Attached to` and choose `Bridged Adapter`.
 
 ### Note: What is `Bridged Adapter` and why we used it 
