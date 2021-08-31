@@ -7,9 +7,7 @@ A virtual Lab is a simulated lab environment typically implemented as a software
 We will go to [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
 
 ### Kali Linux Installtion
-- Go to [https://www.kali.org/get-kali](https://www.kali.org/get-kali) and click in Download 
-
-- Then click in Recommended
+- Go to [https://www.kali.org/get-kali](https://www.kali.org/get-kali) and click in Recommended
 
 ![Recommended](./img/kaliLunx-2.png)
 
