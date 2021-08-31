@@ -51,6 +51,6 @@ Bridged Adapter This mode is used for connecting the virtual network adapter of 
 
 A VM virtual network adapter uses the host network interface for a network connection. Put simply, network packets are sent and received directly from/to the virtual network adapter without additional routing. A special net filter driver is used by VirtualBox for a bridged network mode in order to filter data from the physical network adapter of the host.
 
-to read more about the Network visit [link](https://www.nakivo.com/blog/virtualbox-network-setting-guide)
+* Note: to read more about the Network visit [link](https://www.nakivo.com/blog/virtualbox-network-setting-guide)
 
 ### Now we are going to install Kali-linux
