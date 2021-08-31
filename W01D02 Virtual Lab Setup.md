@@ -25,7 +25,7 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
 
 ## Install Kali Linux in VirtualBox
 
-### we will change some setting in VirtualBox after install the Kali-linux
+### we will change some setting in VirtualBox befor install the Kali-linux
 
 1. Create new machine:
 
