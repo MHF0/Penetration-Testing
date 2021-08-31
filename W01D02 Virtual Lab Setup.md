@@ -24,4 +24,4 @@ Go to [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wik
 
 ![vBoxDownload](./img/VMBox-download.png)
 
-Then open the  `VirtualBox-6.1.26-145957-Win` and press next 
+Then open the  `VirtualBox-6.1.26-145957-Win` setup and press next 
