@@ -32,18 +32,18 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
 
 1. Create new machine:
 
-- Click in `new`.
-- In the `Name` section write `Kali`.
-- In the `Type` section select `Linux`.
-- In the `Version` section select `Debian (64-bit)`.
-- Change the `1024` to `4024`.
-- Press next and in the `File location size` change the `8.00 GB` to `50.0 GB`.
+    - Click in `new`.
+    - In the `Name` section write `Kali`.
+    - In the `Type` section select `Linux`.
+    - In the `Version` section select `Debian (64-bit)`.
+    - Change the `1024` to `4024`.
+    - Press next and in the `File location size` change the `8.00 GB` to `50.0 GB`.
 
 2. now we must change some setting
 
-- Go to `Settings`.
-- In the left side go to `Storage` and press in `Controller: IDE   O+` and click in `Add` then chose the `kali-linux iso file` and press ok.
-- Go to the `Network` and select `Attached to` and choose `Bridged Adapter`.
+    - Go to `Settings`.
+    - In the left side go to `Storage` and press in `Controller: IDE   O+` and click in `Add` then chose the `kali-linux iso file`  and press ok.
+    - Go to the `Network` and select `Attached to` and choose `Bridged Adapter`.
 
 ### Note: What is `Bridged Adapter` and why we used it 
 
