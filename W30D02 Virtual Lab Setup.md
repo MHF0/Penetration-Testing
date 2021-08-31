@@ -3,6 +3,7 @@ Virtual labs are simulated learning environments that allow students to complete
 
 ## Createing TryHackMe Account
 
-We will go to this link [https://tryhackme.com/](https://tryhackme.com/). And click to Join Now to create new account.
+We will go to this link [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
 
 ## Kali Linux Installtion
+Go to this link [https://www.kali.org](https://www.kali.org)
