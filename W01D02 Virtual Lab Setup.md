@@ -33,7 +33,7 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
     - In the `Name` section write `Kali`.
     - In the `Type` section select `Linux`.
     - In the `Version` section select `Debian (64-bit)`.
-    - Change the `1024` to `4024`.
+    - Change the `1024` to `2024`.
     - Press next and in the `File location size` change the `8.00 GB` to `50.0 GB`.
 
 2. now we must change some setting
