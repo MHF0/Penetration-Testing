@@ -79,8 +79,21 @@ Broken access control vulnerabilities exist when a user can in fact access some 
 
 ## Cross Site Scripting - XSS
 
+## What is Cross Site Scripting - XSS
 Cross-site scripting (XSS) is a type of security vulnerability typically found in web applications. 
 XSS attacks enable attackers to inject client-side scripts into web pages viewed by other users.
 A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy.
 
 Cross-site scripting carried out on websites accounted for roughly 84% of all security vulnerabilities documented by Symantec up until 2007. XSS effects vary in range from petty nuisance to significant security risk, depending on the sensitivity of the data handled by the vulnerable site and the nature of any security mitigation implemented by the site's owner network.
+
+## SQL Injection
+
+## What is SQL Injection
+A SQLI is a type of attack by which cybercriminals exploit software vulnerabilities in web applications for the purpose of stealing, deleting, or modifying data, or gaining administrative control over the systems running the affected applications.
+
+## XXE
+
+## What is XXE
+XML external entity injection (also known as XXE) is a web security vulnerability that allows an attacker to interfere with an application's processing of XML data. It often allows an attacker to view files on the application server filesystem, and to interact with any back-end or external systems that the application itself can access.
+
+In some situations, an attacker can escalate an XXE attack to compromise the underlying server or other back-end infrastructure, by leveraging the XXE vulnerability to perform server-side request forgery (SSRF) attacks.
