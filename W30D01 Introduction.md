@@ -74,5 +74,5 @@ This is an old attack method, but it's still effective and popular with hackers.
 
 ## Broken Access Control
 
-## What is Broken Access Control
+### What is Broken Access Control
 Broken access control vulnerabilities exist when a user can in fact access some resource or perform some action that they are not supposed to be able to access.
