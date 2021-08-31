@@ -1,4 +1,4 @@
-## Virtual Lap
+## Virtual Lap Installation
 Virtual labs are simulated learning environments that allow students to complete laboratory experiments online and explore concepts and theories without stepping into a physical science lab.
 
 ### Createing TryHackMe Account
