@@ -33,6 +33,6 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
 1. create new machine:
 
 - Click in `new`.
-- In the Name section write `Kali`.
-- In the Type section select `Linux`.
-- In the Version section select `Debian (64-bit)`.
+- In the `Name` section write `Kali`.
+- In the `Type` section select `Linux`.
+- In the `Version` section select `Debian (64-bit)`.
