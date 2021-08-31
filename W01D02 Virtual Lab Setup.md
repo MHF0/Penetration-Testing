@@ -7,3 +7,4 @@ We will go to this link [https://tryhackme.com](https://tryhackme.com). And clic
 
 ## Kali Linux Installtion
 Go to this link [https://www.kali.org](https://www.kali.org)
+[kali](./img/kaliLunx-1.png)
