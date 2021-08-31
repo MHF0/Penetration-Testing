@@ -25,3 +25,14 @@ Go to [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wik
 ![vBoxDownload](./img/VMBox-download.png)
 
 Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
+
+## Install Kali Linux in VirtualBox
+
+### we will change some setting in VirtualBox after install the Kali-linux
+
+1. create new machine:
+
+- Click in `new`.
+- In the Name section write `Kali`.
+- In the Type section select `Linux`.
+- In the Version section select `Debian (64-bit)`.
