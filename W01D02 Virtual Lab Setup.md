@@ -3,10 +3,10 @@ Virtual labs are simulated learning environments that allow students to complete
 
 ### Createing TryHackMe Account
 
-We will go to this link [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
+We will go to this [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
 
 ### Kali Linux Installtion
-- Go to link [https://www.kali.org](https://www.kali.org) and click in Download 
+- Go to [https://www.kali.org](https://www.kali.org) and click in Download 
 
 ![Download](./img/kaliLunx-1.png)
 
@@ -20,7 +20,7 @@ We will go to this link [https://tryhackme.com](https://tryhackme.com). And clic
 
 ### Now we can dowload the VirtualBox machine
 
-Go to link [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) and click on Windows hosts
+Go to [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) and click on Windows hosts
 
 ![vBoxDownload](./img/VMBox-download.png)
 
