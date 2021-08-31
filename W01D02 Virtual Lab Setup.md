@@ -30,9 +30,27 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
 
 ### we will change some setting in VirtualBox after install the Kali-linux
 
-1. create new machine:
+1. Create new machine:
 
 - Click in `new`.
 - In the `Name` section write `Kali`.
 - In the `Type` section select `Linux`.
 - In the `Version` section select `Debian (64-bit)`.
+- Change the `1024` to `4024`.
+- Press next and in the `File location size` change the `8.00 GB` to `50.0 GB`.
+
+2. now we must change some setting
+
+- Go to `Settings`.
+- In the left side go to `Storage` and press in `Controller: IDE   O+` and click in `Add` then chose the `kali-linux iso file` and press ok.
+- Go to the `Network` and select `Attached to` and choose `Bridged Adapter`.
+
+### Note: What is `Bridged Adapter` and why we used it 
+
+Bridged Adapter This mode is used for connecting the virtual network adapter of a VM to a physical network to which a physical network adapter of the VirtualBox host machine is connected.
+
+A VM virtual network adapter uses the host network interface for a network connection. Put simply, network packets are sent and received directly from/to the virtual network adapter without additional routing. A special net filter driver is used by VirtualBox for a bridged network mode in order to filter data from the physical network adapter of the host.
+
+to read more about the Network visit [https://www.nakivo.com/blog/virtualbox-network-setting-guide/](link)
+
+### Now we are going to install Kali-linux
