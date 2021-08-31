@@ -36,7 +36,7 @@ Enumeration is defined as the process of extracting user names, machine names, n
 
 In this phase, the attacker creates an active connection to the system and performs directed queries to gain more information about the target. The gathered information is used to identify the vulnerabilities or weak points in system security and tries to exploit in the System gaining phase.
 
-### What is the wensite we will use to Enumeration & Information
+### What is the website we will use to Enumeration & Information
 - Google Dorking.
 - WhatWeb.
 - Dirb.
