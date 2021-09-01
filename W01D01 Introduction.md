@@ -20,7 +20,7 @@ By the end of this Stage, you will be familiar with the following:
 ## Virtual Lap
 
 ### What is Virtual Lap
-Virtual labs are simulated learning environments that allow students to complete laboratory experiments online and explore concepts and theories without stepping into a physical science lab.
+A virtual Lab is a simulated lab environment typically implemented as a software program which allows the users to perform their experiments.
 
 ### What we will learn
 We will learn how to download and use this following:
