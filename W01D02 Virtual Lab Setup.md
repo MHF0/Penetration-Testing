@@ -51,3 +51,10 @@ A VM virtual network adapter uses the host network interface for a network conne
 * Note: read more about the Network visit [link](https://www.nakivo.com/blog/virtualbox-network-setting-guide)
 
 ### Now we are going to install Kali-linux
+1.  Click `Start`.
+2. Press in `Graphical install`.
+3. Select language 
+   - ![installKali](./img/install-kali-1.png)
+   - ![installKali](./img/install-kali-2.png)
+   - ![installKali](./img/install-kali-3.png)
+   - ![installKali](./img/install-kali-4.png)
