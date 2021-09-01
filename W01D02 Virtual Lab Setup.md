@@ -53,7 +53,8 @@ A VM virtual network adapter uses the host network interface for a network conne
 ### Now we are going to install Kali-linux
 1.  Click `Start`.
 2. Press in `Graphical install`.
-3. Select language 
+
+3. Select language:
 ![installKali](./img/install-kali-1.png)
 ![installKali](./img/install-kali-2.png)
 ![installKali](./img/install-kali-3.png)
