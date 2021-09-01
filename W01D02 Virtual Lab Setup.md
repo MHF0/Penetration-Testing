@@ -54,7 +54,20 @@ A VM virtual network adapter uses the host network interface for a network conne
 1.  Click `Start`.
 2. Press in `Graphical install`.
 3. Select language 
-   - ![installKali](./img/install-kali-1.png)
-   - ![installKali](./img/install-kali-2.png)
-   - ![installKali](./img/install-kali-3.png)
-   - ![installKali](./img/install-kali-4.png)
+    ![installKali](./img/install-kali-1.png)
+    ![installKali](./img/install-kali-2.png)
+    ![installKali](./img/install-kali-3.png)
+    ![installKali](./img/install-kali-4.png)
+
+4. In configure the network:
+    - Hostname write `Kali`.
+    - Domainname make it emmpty.
+5. set up the users and paswords:
+    - Full name for the new user `anething you like`.
+    - user for the account make it defult.
+    - password `root`.
+6. Partition disk:
+    - Partitioning methoud should be `Guided-use entire disk`.
+    - Select disk to partition make it defult.
+    - Partitioning schema: `All files in one partition (recommended for new users)`.
+    - write change to diske make sure to be  `Yes`.
