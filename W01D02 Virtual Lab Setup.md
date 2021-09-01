@@ -55,10 +55,11 @@ A VM virtual network adapter uses the host network interface for a network conne
 2. Press in `Graphical install`.
 
 3. Select language:
-![installKali](./img/install-kali-1.png)
-![installKali](./img/install-kali-2.png)
-![installKali](./img/install-kali-3.png)
-![installKali](./img/install-kali-4.png)
+
+- ![installKali1](./img/install-kali-1.png)
+- ![installKali2](./img/install-kali-2.png)
+- ![installKali3](./img/install-kali-3.png)
+- ![installKali4](./img/install-kali-4.png)
 
 4. In configure the network:
     - Hostname write `Kali`.
