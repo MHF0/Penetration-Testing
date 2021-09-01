@@ -85,6 +85,6 @@ A VM virtual network adapter uses the host network interface for a network conne
     - `Device for boot loader installaion` choose the `/dev/sda (ata-VBOX_HARDDISK_VB894idi83-a88d4993)`.
 
 ### Now uor KaliLunx are ready, make sure you have like pictuer
-![completeInstall](./im/completeInstallion.png).
+![completeInstall](./img/completeInstallion.png).
 
 ## Note: use the username and the password that you add it in the installation.
