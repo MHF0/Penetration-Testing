@@ -62,19 +62,19 @@ A VM virtual network adapter uses the host network interface for a network conne
 - ![installKali4](./img/install-kali-4.png)
 
 4. In configure the network:
-    - Hostname write `Kali`.
-    - Domainname make it emmpty.
+    - `Hostname` write `Kali`.
+    - `Domainname` make it emmpty.
 
 5. set up the users and paswords:
-    - Full name for the new user `anething you like`.
-    - user for the account make it defult.
-    - password `root`.
+    - `Full name for the new user` write `anething you like`.
+    - `user for the account` make it defult.
+    - `password` make it `root`.
 
 6. Partition disk:
-    - Partitioning methoud should be `Guided-use entire disk`.
-    - Select disk to partition make it defult.
-    - Partitioning schema: `All files in one partition (recommended for new users)`.
-    - write change to diske make sure to be  `Yes`.
+    - `Partitioning methoud` should be `Guided-use entire disk`.
+    - `Select disk to partition` make it defult.
+    - `Partitioning schema` choose `All files in one partition (recommended for new users)`.
+    - `write change to diske` make sure to be  `Yes`.
 
 7. Software selection:
     - choose software to install:
