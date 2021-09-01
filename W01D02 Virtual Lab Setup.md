@@ -66,7 +66,7 @@ A VM virtual network adapter uses the host network interface for a network conne
     - `Domainname` make it emmpty.
 
 5. set up the users and paswords:
-    - `Full name for the new user` write `anething you like`.
+    - `Full name for the new user` write `anything you like`.
     - `user for the account` make it defult.
     - `password` make it `root`.
 
