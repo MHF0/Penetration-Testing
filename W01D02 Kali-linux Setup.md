@@ -6,7 +6,7 @@ A virtual Lab is a simulated lab environment typically implemented as a software
 
 We will go to [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
 
-### Kali Linux Installtion
+## Kali Linux Installtion
 - Go to [https://www.kali.org/get-kali](https://www.kali.org/get-kali) and click in Recommended
 
 ![Recommended](./img/kaliLunx-2.png)
@@ -84,7 +84,8 @@ A VM virtual network adapter uses the host network interface for a network conne
     - `Install the GRUB boot loader to your primary drive` make sure it is `Yes`.
     - `Device for boot loader installaion` choose the `/dev/sda (ata-VBOX_HARDDISK_VB894idi83-a88d4993)`.
 
-### Now uor KaliLunx are ready, make sure you have like pictuer
+### Now our KaliLunx are ready, make sure you have like pictuer
+
 ![completeInstall](./img/completeInstallion.png).
 
 ## Note: use the username and the password that you add it in the installation.
