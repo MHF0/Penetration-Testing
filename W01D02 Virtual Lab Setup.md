@@ -42,7 +42,7 @@ Then open the  `VirtualBox-6.1.26-145957-Win` setup and download it.
     - In the left side go to `Storage` and press in `Controller: IDE   O+` and click in `Add` then chose the `kali-linux.iso file`  and press ok.
     - Go to the `Network` and select `Attached to` and choose `Bridged Adapter`.
 
-# Note: What is `Bridged Adapter` and why we used it 
+- Note: What is `Bridged Adapter` and why we used it 
 
 Bridged Adapter This mode is used for connecting the virtual network adapter of a VM to a physical network to which a physical network adapter of the VirtualBox host machine is connected.
 
