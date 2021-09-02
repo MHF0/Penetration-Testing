@@ -8,7 +8,7 @@
 
 2. Extract the file then opean your VBox.
 
-3. OSWASPBWA installtion:
+3. OWASPBWA installtion:
 
 - Click in `New`.
 
