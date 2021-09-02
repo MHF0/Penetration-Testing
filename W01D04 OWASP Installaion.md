@@ -13,8 +13,11 @@
 - In the `Name` write `OWSPBWA` and in the `Type` select `Linux` finaly in the `Version` choose `Other Linux (64-bit)`.
 - In the `Memory size` make sure it is `1024`.
 - In the `Hardesk selector` choose `Use an existing virtual hard disk file`.
+
 ![OWASP-2](./img/Screenshot_2.png)
+
 - make sure you are create like the images:
+
 ![OWASP-3](./img/Screenshot_3.png)
 
 ![OWASP-4](./img/Screenshot_4.png)
