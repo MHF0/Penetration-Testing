@@ -9,9 +9,13 @@
 2. Extract the file then opean your VBox.
 
 3. Installtion steps:
+
 - Click in `New`.
+
 - In the `Name` write `OWSPBWA` and in the `Type` select `Linux` finaly in the `Version` choose `Other Linux (64-bit)`.
+
 - In the `Memory size` make sure it is `1024`.
+
 - In the `Hardesk selector` choose `Use an existing virtual hard disk file`, then do like the images:
 
 ![OWASP-2](./img/Screenshot_2.png)
@@ -31,3 +35,20 @@
 
 - Finaly press create.
 
+4. Run the `OWASPBWA`:
+
+- make sure the `Network` Attached to `Bridged Adapter` befor you start
+
+- Now Click in `Start`
+
+- You should have like the image
+
+![OWASP-7](./img/Screenshot_7.png)
+
+- Now for `login` write `root` and the `password` is `owaspbwa` then you shuold have like the image:
+
+![OWASP-8](./img/Screenshot_8.png)
+
+- Now you can visitew this IP adress `192.168.1.85` you should have like this
+
+![OWASP-9](./img/Screenshot_9.png)
