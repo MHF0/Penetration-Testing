@@ -49,6 +49,12 @@
 
 ![OWASP-8](./img/Screenshot_8.png)
 
-- Now you can visitew this IP adress `192.168.1.85` you should have like this
+- Now you can visite this IP adress `192.168.1.85` you should have like this
 
 ![OWASP-9](./img/Screenshot_9.png)
+
+5. Now `Start` the Kali linux with `OWASP` to check the server is runing in our kali or not
+    
+- Opean the terminal and use this command `ping 192.168.1.85` and you will get like this
+
+![OWASP-10](./img/Screenshot_10.png)
