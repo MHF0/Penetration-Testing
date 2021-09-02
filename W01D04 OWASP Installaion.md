@@ -41,20 +41,20 @@
 
 - Now Click in `Start`
 
-- You should have like the image
+- You should have like this
 
 ![OWASP-7](./img/Screenshot_7.png)
 
-- Now for `login` write `root` and the `password` is `owaspbwa` then you shuold have like the image:
+- Now for `login` write `root` and the `password` is `owaspbwa`
 
 ![OWASP-8](./img/Screenshot_8.png)
 
-- Now you can visite this IP adress `192.168.1.85` you should have like this
+- Now you can visite this IP adress `192.168.1.85` in your browser
 
 ![OWASP-9](./img/Screenshot_9.png)
 
 5. Now `Start` the Kali linux with `OWASP` to check the server is runing in our kali or not
     
-- Opean the terminal and use this command `ping 192.168.1.85` and you will get like this
+- Opean the terminal and use this command `ping 192.168.1.85`
 
 ![OWASP-10](./img/Screenshot_10.png)
