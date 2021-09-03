@@ -38,6 +38,6 @@ DIRB main purpose is to help in professional web application auditing. Specially
 
 ![dirb-3](./img/Dirb-3.png)
 
-We will see this 
+ and we will see this 
 
 ![dirb-4](./img/Dirb-4.png)
