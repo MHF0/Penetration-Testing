@@ -62,7 +62,7 @@ In case you hadn’t guessed, `mkdir` is short for ‘make directory’. Now tha
 
 `mkdir dir1 dir2 dir3`
 
-There’s something a little different about that command. So far we’ve only seen commands that work on their own `cd, pwd` or that have a single item afterwards `cd /, cd ~/Desktop`. But this time we’ve added three things after the `mkdir` command. Those things are referred to as parameters or arguments, and different commands can accept different numbers of arguments. The `mkdir` command expects at least one argument, whereas the `cd` command can work with zero or one, but no more. See what happens when you try to pass the wrong number of parameters to a command:\
+There’s something a little different about that command. So far we’ve only seen commands that work on their own `cd, pwd` or that have a single item afterwards `cd /, cd ~/Desktop`. But this time we’ve added three things after the `mkdir` command. Those things are referred to as parameters or arguments, and different commands can accept different numbers of arguments. The `mkdir` command expects at least one argument, whereas the `cd` command can work with zero or one, but no more. See what happens when you try to pass the wrong number of parameters to a command:
 
 `mkdir`
 
