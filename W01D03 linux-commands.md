@@ -89,8 +89,11 @@ Okay, so it’s not exactly what was displayed on the screen previously, but it 
 Yes, `echo` just prints its arguments back out again (hence the name). But combine it with a redirect, and you’ve got a way to easily create small test files:
 
 `echo "This is a test" > test_1.txt`
+
 `echo "This is a second test" > test_2.txt`
+
 `echo "This is a third test" > test_3.txt`
+
 `ls`
 
 You should `cat` each of these files to check their contents. But `cat` is more than just a file viewer - its name comes from ‘concatenate’, meaning “to link together”. If you pass more than one filename to `cat` it will output each of them, one after the other, as a single block of text:
