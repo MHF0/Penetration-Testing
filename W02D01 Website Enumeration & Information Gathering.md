@@ -65,7 +65,7 @@ A search parameter is a limitation applied to a search. Here are a few examples 
 
 ### How can we use it
 
-1. Make sure you are opening OWASPBWA and KALI
+1. Make sure you are opening OWASPBWA and Kali Linux
 
 2. Go to firefox browser 
 
