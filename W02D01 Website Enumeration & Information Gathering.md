@@ -91,4 +91,4 @@ We will go in the admin page with multiple input and one admin email
 
 ![google5](./img/Google-5.png)
 
-3. We can get a multiple commands to serach in google database go to [https://www.exploit-db.com/google-hacking-database](link)
+3. We can get a multiple commands to serach in google database go to [link](https://www.exploit-db.com/google-hacking-database)
