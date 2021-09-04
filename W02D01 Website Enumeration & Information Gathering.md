@@ -79,13 +79,15 @@ A search parameter is a limitation applied to a search. Here are a few examples 
 
 - Let us search for slash admin directory form Google search write `intitle:admin OR inurl:admin site:etf.bg.ac.rs`
 
+We got a links that we can opean it that awesome now opean any of these links
+
 ![google3](./img/Google-3.png)
 
-We got a links that we can opean it that awesome now opean any of these links
+We got a `Secure Connection Faild` press in `Enable TLS 1.0 and 1.1`
 
 ![google4](./img/Google-4.png)
 
-We got a `Secure Connection Faild` press in `Enable TLS 1.0 and 1.1` and we will go in the admin page with multiple input and one admin email
+We will go in the admin page with multiple input and one admin email
 
 ![google5](./img/Google-5.png)
 
