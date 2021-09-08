@@ -90,7 +90,7 @@ To go up to the parent directory, in this case back to `/`, use the special synt
     pwd
 
   
-
+---
 ### Creating folders and files
 
   
@@ -116,6 +116,7 @@ mkdir
 cd /etc ~/Desktop
   ```
 
+---
 ### Creating files using redirection
 
 Our demonstration folder is starting to look rather full of directories, but is somewhat lacking in files. Let’s remedy that by redirecting the output from a command so that, instead of being printed to the screen, it ends up in a new file. First, remind yourself what the `ls` command is currently showing:
@@ -138,22 +139,18 @@ Yes, `echo` just prints its arguments back out again (hence the name). But combi
 
 ```
 echo "This is a test" > test_1.txt
-
 echo "This is a second test" > test_2.txt
-
-`echo "This is a third test" > test_3.txt
-
+echo "This is a third test" > test_3.txt
 ls
 ```
-  
-
+ 
 You should `cat` each of these files to check their contents. But `cat` is more than just a file viewer - its name comes from ‘concatenate’, meaning “to link together”. If you pass more than one filename to, `cat` it will output each of them, one after the other, as a single block of text:
 
 
     cat test_1.txt test_2.txt test_3.txt
 
-
-### Sudo and su commands
+---
+###  Sudo and su commands
 
 The `sudo` command allows you to run programs with the security privileges of another user (by default, as the superuser). It prompts you for your personal password and confirms your request to execute a command by checking a file, called `sudoers`, which the system administrator configures. Using the `sudoers` file, system administrators can give certain users or groups access to some or all commands without those users having to know the `root` password. It also logs all commands and arguments, so there is a record of who used it for what, and when.
 
@@ -183,6 +180,7 @@ The `user` feature is optional; if you don't provide a user, the `su` command de
 
 Using `su` creates security hazards, is potentially dangerous, and requires more administrative maintenance. It's not good practice to have numerous people knowing and using the `root` password because when logged in as `root`, you can do anything to the system. This could provide too much power for inexperienced users, who could unintentionally damage the system. Additionally, each time a user should no longer use the `root` account (for example, an employee leaves), the system administrator will have to change the `root` password.
 
+-----
 ### Nano editor
 
 To edit a file using the Nano editor, enter:
