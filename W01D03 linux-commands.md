@@ -190,3 +190,14 @@ To edit a file using the Nano editor, enter:
 Replace  `filename`  with the name of the file you want to edit; this can be an existing file or a new one that Nano will create for you. Nano will open the file, and you can then edit it much as you would a document in a word processor.
 
 The caret (`^`) in front of the commands in the menu indicates that you should hold down the  `Ctrl`  key and press the corresponding letter. For example,  `^A`  means you should hold down the  `Ctrl`  key, then press  `a`. (The commands are listed on the screen in uppercase letters, but you type them in lowercase.
+
+---
+### clear command
+
+`clear` is a standard Unix computer operating system command that is used to clear the terminal screen. This command first looks for a terminal type in the environment and after that, it figures out the **term info** database for how to clear the screen. And this command will ignore any command-line parameters that may be present. Also, the `clear` command doesn’t take any argument, and it is almost similar to `cls` command on a number of other Operating Systems.
+
+    clear
+**Note:** In order to clear the terminal press **Ctrl+L**
+
+---
+
