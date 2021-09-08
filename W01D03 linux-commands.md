@@ -153,7 +153,7 @@ You should `cat` each of these files to check their contents. But `cat` is more 
     cat test_1.txt test_2.txt test_3.txt
 
 
-### About Unix sudo and su commands
+### sudo and su commands
 
 The `sudo` command allows you to run programs with the security privileges of another user (by default, as the superuser). It prompts you for your personal password and confirms your request to execute a command by checking a file, called `sudoers`, which the system administrator configures. Using the `sudoers` file, system administrators can give certain users or groups access to some or all commands without those users having to know the `root` password. It also logs all commands and arguments, so there is a record of who used it for what, and when.
 
