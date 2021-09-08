@@ -200,4 +200,38 @@ The caret (`^`) in front of the commands in the menu indicates that you should h
 **Note:** In order to clear the terminal press **Ctrl+L**
 
 ---
+### Ifconfig command
+`ifconfig` (interface configuration) command is used to configure the kernel-resident network interfaces. It is used at the boot time to set up the interfaces as necessary. After that, it is usually used when needed during debugging or when you need system tuning. Also, this command is used to assign the IP address and netmask to an interface or to enable or disable a given interface.
 
+    ifconfig [...OPTIONS] [INTERFACE]
+Newer versions of some Linux distributions don’t have ifconfig command pre-installed. So, in case, there is an error  **“ifconfig: command not found”**, Then execute the following command to install ifconfig.
+
+**For Debian, Ubuntu, and related Linux distributions.**
+
+    sudo apt-get install net-tools
+This will install ifconfig along with some other networking commands like arp, route, ipmaddr.
+
+**Options:**
+
+ - **-a :** This option is used to display all the interfaces available, even if they are down.
+
+        ifconfig -a
+ 
+![ifconfig](./img/ifconfig-a.png)
+
+- **-s :** Display a short list, instead of details.
+
+        ifconfig -s
+        
+![ifconfig-s](./img/ifconfig-s.png)
+
+- **-v :** Run the command in verbose mode – log more details about execution.
+
+        ifconfig -v
+
+![ifconfig-v](./img/ifconfig-v.png)
+
+- **up :** This option is used to activate the driver for the given interface.
+
+      ifconfig interface up
+----
