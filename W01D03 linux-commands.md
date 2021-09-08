@@ -235,3 +235,36 @@ This will install ifconfig along with some other networking commands like arp, r
 
       ifconfig interface up
 ----
+### nslookup command
+**Nslookup** (stands for “Name Server Lookup”) is a useful command for getting information from DNS server. It is a network administration tool for querying the Domain Name System (DNS) to obtain domain name or IP address mapping or any other specific DNS record. It is also used to troubleshoot DNS related problems.
+
+    nslookup [option]
+The **nslookup** command enters interactive mode when no arguments are given, or when the first argument is a - (minus sign) and the second argument is the host name or internet address of a name server. When no arguments are given, the command queries the default name server. The **nslookup** command enters non-interactive mode when you give the name or internet address of the host to be looked up as the first argument. The optional second argument specifies the host name or address of a name server. You can specify options on the command line if they precede the arguments and are prefixed with a hyphen. For example, to change the default query type to host information, and the initial timeout to 10 seconds, enter the following command:
+
+    nslookup -query=hinfo  -timeout=10
+**host command**
+
+**host** command in Linux system is used for DNS (Domain Name System) lookup operations. In simple words, this command is used to find the IP address of a particular domain name or if you want to find out the domain name of a particular IP address the host command becomes handy. You can also find more specific details of a domain by specifying the corresponding option along with the domain name.
+
+    host [-aCdlriTWV] [-c class] [-N ndots] [-t type] [Wtime]
+     [-R number] [-m flag] hostname [server]
+     
+**host command without any option:** It will print the general syntax of the command along with the various options that can be used with the host command as well as gives a brief description about each option.
+
+**Different options with the host command:**
+
+- **host domain_name:** This will print the IP address details of the specified domain.
+
+	  host example.com
+	  
+- **host IP_Address:** This will display the domain details of the specified IP Address.
+
+	  host -a example.com
+	  
+- **-t :** It is used to specify the type of query.
+
+	  host -t ns example.com
+	  
+- **-L**: In order to list all hosts in a domain.For this command to work you need to be either an admin or a node server.
+
+	  host -l example.com
