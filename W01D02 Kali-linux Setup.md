@@ -88,4 +88,4 @@ A VM virtual network adapter uses the host network interface for a network conne
 
 ![completeInstall](./img/completeInstallion.png).
 
-## Note: use the username and the password that you add it in the installation.
+**Note:** use the username and the password that you add it in the installation.
