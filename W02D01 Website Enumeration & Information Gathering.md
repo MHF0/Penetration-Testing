@@ -8,27 +8,15 @@
 
 By the end of this lesons, you will be familiar with the following
 
-  
-
 - Drib
-
 - Google Dorks
-
 - Nikto
-
 - Nmap
-
 - Ping, Host, Nslookup
-
 - Website Enumeration - Theory
-
 - Whatweb
 
-  
-
 ## Dirb
-
-  
 
 ### Waht is DIRP
 
@@ -218,7 +206,7 @@ Nikto is not designed as a stealthy tool. It will test a web server in the quick
 - and here it's description each those version what is match to find it must be interesting for us 
 
 		+ The anti-clickjacking X-Frame-Options header is not present.
-		+ The X-XSS-Protection header is not defined. This header can hint to the 			 user agent to protect against some forms of XSS
+		+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
 		+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
 
 - it's show for us what the HTTP methods the server is use
