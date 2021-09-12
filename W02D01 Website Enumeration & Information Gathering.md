@@ -255,7 +255,7 @@ Nmap ("Network Mapper") is a free and open source utility for network discovery 
 
  We want to scan this website, `scanme.nmap.org` by using this command `nmap -A -T4 scanme.nmap.org`
  
-	 you will get these output 
+ you will get these output 
 
 		nmap -A -T4 scanme.nmap.org
 		Nmap scan report for scanme.nmap.org (74.207.244.221)
