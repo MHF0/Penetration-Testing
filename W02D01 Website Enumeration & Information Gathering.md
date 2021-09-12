@@ -198,7 +198,7 @@ Nikto is not designed as a stealthy tool. It will test a web server in the quick
 
 	This will open the options for us 
 
-![nikto](./img/nikto-1)
+![nikto](./img/nikto-1.png)
 
 - The most important command that is `-host` 
 2. run this command to scan our OWASP machine
