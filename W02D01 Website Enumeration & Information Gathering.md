@@ -8,6 +8,8 @@
 
 By the end of this lesons, you will be familiar with the following
 
+  
+
 - Drib
 - Google Dorks
 - Nikto
@@ -16,9 +18,13 @@ By the end of this lesons, you will be familiar with the following
 - Website Enumeration - Theory
 - Whatweb
 
+  
+
 ## Dirb
 
-### Waht is DIRP
+  
+
+### What is DIRP
 
   
 
@@ -26,11 +32,11 @@ DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects
 
   
 
-DIRB comes with a set of preconfigured attack wordlists for easy usage but you can use your custom wordlists. Also DIRB sometimes can be used as a classic CGI scanner, but remember is a content scanner not a vulnerability scanner.
+DIRB comes with a set of preconfigured attack word lists for easy usage, but you can use your custom word lists. Also, DIRB sometimes can be used as a classic CGI scanner, but remember is a content scanner not a vulnerability scanner.
 
   
 
-DIRB main purpose is to help in professional web application auditing. Specially in security related testing. It covers some holes not covered by classic web vulnerability scanners. DIRB looks for specific web objects that other generic CGI scanners can’t look for. It doesn’t search vulnerabilities nor does it look for web contents that can be vulnerables.
+DIRB main purpose is to help in professional web application auditing. Specially in security related testing. It covers some holes not covered by classic web vulnerability scanners. DIRB looks for specific web objects that other generic CGI scanners can’t look for. It doesn’t search vulnerabilities nor does it look for web contents that can be vulnerable.
 
   
 
@@ -38,7 +44,7 @@ DIRB main purpose is to help in professional web application auditing. Specially
 
   
 
-- Opean your tirmenal and write `dirb`
+- Open your terminal and write `dirb`
 
   
 
@@ -46,7 +52,7 @@ DIRB main purpose is to help in professional web application auditing. Specially
 
   
 
-* Note: make sure you are opeaning your OWASP server
+* Note: make sure you are opening your OWASP server
 
   
 
@@ -58,7 +64,7 @@ DIRB main purpose is to help in professional web application auditing. Specially
 
   
 
-- Now we can go in our brawser and use any directory from the `dirb` such as lets use `http://192.168.1.58/phpmyadmin/`
+- Now we can go in our browser and use any directory from the `dirb` such as let's use `http://192.168.1.58/phpmyadmin/`
 
   
 
@@ -225,5 +231,20 @@ Nikto is not designed as a stealthy tool. It will test a web server in the quick
 		+ /phpmyadmin/: phpMyAdmin directory found
 		+ OSVDB-3092: /phpmyadmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited t
 
+3. We can scan with the `-port` to know what the directors are open that port 
+Write this command `nikto -host 192.168.1.85 -port 8081`
+you will get some result that we know it like
+
+	    + The X-XSS-Protection header is not defined. This header can hint to the 			 user agent to protect against some forms of XSS
+		+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
+
+but we got some interesting directors like
+
+    + OSVDB-3092: /admin/: This might be interesting...
+    + OSVDB-3092: /css/: This might be interesting...
+    + /admin/index.html: Admin login page/section found.
+
+
+  
 
 **Note:** you can read more about **Nikto**, visit [link](https://tools.kali.org/information-gathering/nikto).
