@@ -238,7 +238,7 @@ you will get some result that we know it like
 	    + The X-XSS-Protection header is not defined. This header can hint to the 			 user agent to protect against some forms of XSS
 		+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
 
-but we got some interesting directors like
+    but we got some interesting directors like
 
     + OSVDB-3092: /admin/: This might be interesting...
     + OSVDB-3092: /css/: This might be interesting...
