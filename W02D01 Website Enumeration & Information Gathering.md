@@ -197,4 +197,4 @@ you will get these output
     [Cut first 10 hops for brevity]
     11  17.65 ms li86-221.members.linode.com (74.207.244.221)
 
-   	Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds
+Nmap done: 1 IP address (1 host up) scanned in 14.40 seconds

@@ -20,7 +20,6 @@
 
 ![OWASP-2](./img/Screenshot_2.png)
 
-
 ![OWASP-3](./img/Screenshot_3.png)
 
 ![OWASP-4](./img/Screenshot_4.png)
@@ -54,7 +53,7 @@
 ![OWASP-9](./img/Screenshot_9.png)
 
 5. Now `Start` the Kali linux with `OWASP` to check the server is runing in our kali or not
-    
+
 - Opean the terminal and use this command `ping 192.168.1.85`
 
 ![OWASP-10](./img/Screenshot_10.png)
