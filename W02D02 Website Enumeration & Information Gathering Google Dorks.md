@@ -49,4 +49,4 @@ We will go in the admin page with multiple input and one admin email
   
 ![google5](./img/Google-5.png)
   
-3. Not only that, but we can get a multiple commands to search in google database, go to [link](https://www.exploit-db.com/google-hacking-database)
+ Not only that, but we can get a multiple commands to search in google database, go to [link](https://www.exploit-db.com/google-hacking-database)
