@@ -200,4 +200,5 @@ If you want to know more ports that open with other service write this command, 
 it's looks like our firs scan, but it's larger than last one, we have another suctions `VERSION` it's give us the version of each service that is found and open port for example if we look at ssh it is running in port `80/tcp` you got an exact ssh version `OpenSSH 5.3p1 Debian 3ubuntu4 (Ubuntu Linux; protocol 2.0)`.
 
 And if we see the `http` is running in other ports `8080/tcp` that version `Apache Tomcat/Coyote JSP engine 1.1` and the port `8081/tcp` with the version `Jetty 6.1.25` now this is sorting we didn't know before now if we go to Firefox  and try to visit our OWASP virtual machine by typing this `192.168.1.85:8081`  wow we just open another web page 
+
 ![nmap-1](./img/nmap-1.png)
