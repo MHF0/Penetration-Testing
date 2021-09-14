@@ -5,10 +5,10 @@
 
 Nmap ("Network Mapper") is a free and open source utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X. In addition to the classic command-line Nmap executable, the Nmap suite includes an advanced GUI and results viewer a flexible data transfer, redirection, and debugging tool a utility for comparing scan results, and a packet generation and response analysis tool.
 
-- Lets learn how to use the `nmap` by running this command 
+- Lets learn how to use `nmap` by running this command 
 
 	    nmap --help
-you will see the options of `nmap ` tools
+you will see options of `nmap ` tools
 
 - we will do the basics scan in `nmap` just to see what the output we will get and what these tools do for us.
  Let's scan our target by using this command `nmap 192.168.1.85`
