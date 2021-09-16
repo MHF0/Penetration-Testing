@@ -66,3 +66,270 @@ it's looks like our firs scan, but it's larger than last one, we have another su
 And if we see the `http` is running in other ports `8080/tcp` that version `Apache Tomcat/Coyote JSP engine 1.1` and the port `8081/tcp` with the version `Jetty 6.1.25` now this is sorting we didn't know before now if we go to Firefox  and try to visit our OWASP virtual machine by typing this `192.168.1.85:8081`  wow we just open another web page 
 
 ![nmap-1](./img/nmap-1.png)
+
+**Nmap Scripting Engine (NSE)**
+
+The Nmap Scripting Engine (NSE) is one of Nmap's most powerful and flexible features. It allows users to write (and share) simple scripts (using the Lua programming language ) to automate a wide variety of networking tasks. Those scripts are executed in parallel with the speed and efficiency you expect from Nmap. Users can rely on the growing and diverse set of scripts distributed with Nmap, or write their own to meet custom needs.
+
+How can we use nmap scripting, let's use this command 
+
+	nmap --script vuln 192.168.1.85
+What is **vuln**
+The “vuln” category will run a series of scripts which look for known issues on the target system. 
+There are the all scripting 
+
+	$ nmap --script vuln 192.168.1.85
+	Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-16 11:55 EEST
+	Pre-scan script results:
+	| broadcast-avahi-dos: 
+	|   Discovered hosts:
+	|     224.0.0.251
+	|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+	|_  Hosts are all up (not vulnerable).
+	Nmap scan report for owaspbwa.home (192.168.1.85)
+	Host is up (0.00057s latency).
+	Not shown: 991 closed ports
+	PORT     STATE SERVICE
+	22/tcp   open  ssh
+	80/tcp   open  http
+	| http-cross-domain-policy: 
+	|   VULNERABLE:
+	|   Cross-domain and Client Access policies.
+	|     State: VULNERABLE
+	|       A cross-domain policy file specifies the permissions that a web client such as Java, Adobe Flash, Adobe Reader,
+	|       etc. use to access data across different domains. A client acces policy file is similar to cross-domain policy
+	|       but is used for M$ Silverlight applications. Overly permissive configurations enables Cross-site Request
+	|       Forgery attacks, and may allow third parties to access sensitive data meant for the user.
+	|     Check results:
+	|       /crossdomain.xml:
+	|         <?xml version="1.0"?>
+	|         <!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+	|         <cross-domain-policy>
+	|           <allow-access-from domain="*" />
+	|         </cross-domain-policy>
+	|     Extra information:
+	|       Trusted domains:*
+	|   
+	|     References:
+	|       https://www.owasp.org/index.php/Test_RIA_cross_domain_policy_%28OTG-CONFIG-008%29
+	|       http://gursevkalra.blogspot.com/2013/08/bypassing-same-origin-policy-with-flash.html
+	|       https://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/CrossDomain_PolicyFile_Specification.pdf
+	|       https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html
+	|       http://acunetix.com/vulnerabilities/web/insecure-clientaccesspolicy-xml-file
+	|_      http://sethsec.blogspot.com/2014/03/exploiting-misconfigured-crossdomainxml.html
+	| http-csrf: 
+	| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=owaspbwa.home
+	|   Found the following possible CSRF vulnerabilities: 
+	|     
+	|     Path: http://owaspbwa.home:80/railsgoat/
+	|     Form id: 
+	|     Form action: /railsgoat/signup
+	|     
+	|     Path: http://owaspbwa.home:80/railsgoat/
+	|     Form id: 
+	|     Form action: /railsgoat/login
+	|     
+	|     Path: http://owaspbwa.home:80/railsgoat/
+	|     Form id: show_creds_btn
+	|     Form action: #myModalLabel1
+	|     
+	|     Path: http://owaspbwa.home:80/wordpress/
+	|     Form id: searchform
+	|     Form action: http://owaspbwa.home/wordpress/
+	|     
+	|     Path: http://owaspbwa.home:80/gallery2/main.php
+	|     Form id: search_searchblock
+	|     Form action: main.php
+	|     
+	|     Path: http://owaspbwa.home:80/ghost/
+	|     Form id: 
+	|     Form action: submit.php
+	|     
+	|     Path: http://owaspbwa.home:80/shepherd/login.jsp
+	|     Form id: 
+	|     Form action: login
+	|     
+	|     Path: http://owaspbwa.home:80/dom-xss-example.html
+	|     Form id: 
+	|_    Form action: '+location.href+'
+	| http-dombased-xss: 
+	| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=owaspbwa.home
+	|   Found the following indications of potential DOM based XSS: 
+	|     
+	|     Source: document.write('<FORM METHOD="GET" ACTION="'+location.href+'">Enter your name:<input name="name"><input type="submit" value="Submit"></form>')
+	|     Pages: http://owaspbwa.home:80/dom-xss-example.html
+	|     
+	|     Source: document.write("Hello, " + document.URL.substring(pos,document.URL.length)
+	|_    Pages: http://owaspbwa.home:80/dom-xss-example.html
+	| http-enum: 
+	|   /wordpress/: Blog
+	|   /test/: Test page
+	|   /mono/: Mono
+	|   /crossdomain.xml: Adobe Flash crossdomain policy
+	|   /phpmyadmin/: phpMyAdmin
+	|   /wordpress/wp-login.php: Wordpress login page.
+	|   /cgi-bin/: Potentially interesting folder w/ directory listing
+	|   /icons/: Potentially interesting folder w/ directory listing
+	|_  /images/: Potentially interesting folder w/ directory listing
+	| http-internal-ip-disclosure: 
+	|_  Internal IP Leaked: 127.0.1.1
+	| http-sql-injection: 
+	|   Possible sqli for queries:
+	|     http://owaspbwa.home:80/railsgoat/assets/jquery.js?body=1%27%20OR%20sqlspider
+	|     http://owaspbwa.home:80/mutillidae/index.php?page=%2fowaspbwa%2fmutillidae-git%2fhome.php&do=toggle-enforce-ssl%27%20OR%20sqlspider
+	|     http://owaspbwa.home:80/mutillidae/index.php?page=%2fowaspbwa%2fmutillidae-git%2fhome.php&do=toggle-bubble-hints%27%20OR%20sqlspider
+	|     http://owaspbwa.home:80/mutillidae/includes/pop-up-help-context-generator.php?pagename=%2fowaspbwa%2fmutillidae-git%2fhome.php%27%20OR%20sqlspider
+	|     http://owaspbwa.home:80/mutillidae/index.php?page=home.php&popUpNotificationCode=HPH0%27%20OR%20sqlspider
+	|     http://owaspbwa.home:80/mutillidae/index.php?page=%2fowaspbwa%2fmutillidae-git%2fhome.php&do=toggle-security%27%20OR%20sqlspider
+	|_    http://owaspbwa.home:80/mutillidae/index.php?page=%2fowaspbwa%2fmutillidae-git%2fhome.php&do=toggle-hints%27%20OR%20sqlspider
+	|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+	|_http-trace: TRACE is enabled
+	| http-vuln-cve2011-3192: 
+	|   VULNERABLE:
+	|   Apache byterange filter DoS
+	|     State: VULNERABLE
+	|     IDs:  CVE:CVE-2011-3192  BID:49303
+	|       The Apache web server is vulnerable to a denial of service attack when numerous
+	|       overlapping byte ranges are requested.
+	|     Disclosure date: 2011-08-19
+	|     References:
+	|       https://www.securityfocus.com/bid/49303
+	|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+	|       https://www.tenable.com/plugins/nessus/55976
+	|_      https://seclists.org/fulldisclosure/2011/Aug/175
+	139/tcp  open  netbios-ssn
+	143/tcp  open  imap
+	|_sslv2-drown: 
+	443/tcp  open  https
+	|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+	|_http-csrf: Couldn't find any CSRF vulnerabilities.
+	|_http-dombased-xss: Couldn't find any DOM based XSS.
+	| http-slowloris-check: 
+	|   VULNERABLE:
+	|   Slowloris DOS attack
+	|     State: LIKELY VULNERABLE
+	|     IDs:  CVE:CVE-2007-6750
+	|       Slowloris tries to keep many connections to the target web server open and hold
+	|       them open as long as possible.  It accomplishes this by opening connections to
+	|       the target web server and sending a partial request. By doing so, it starves
+	|       the http server's resources causing Denial Of Service.
+	|       
+	|     Disclosure date: 2009-09-17
+	|     References:
+	|       http://ha.ckers.org/slowloris/
+	|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+	|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+	|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+	| ssl-ccs-injection: 
+	|   VULNERABLE:
+	|   SSL/TLS MITM vulnerability (CCS Injection)
+	|     State: VULNERABLE
+	|     Risk factor: High
+	|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+	|       does not properly restrict processing of ChangeCipherSpec messages,
+	|       which allows man-in-the-middle attackers to trigger use of a zero
+	|       length master key in certain OpenSSL-to-OpenSSL communications, and
+	|       consequently hijack sessions or obtain sensitive information, via
+	|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+	|           
+	|     References:
+	|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+	|       http://www.cvedetails.com/cve/2014-0224
+	|_      http://www.openssl.org/news/secadv_20140605.txt
+	| ssl-dh-params: 
+	|   VULNERABLE:
+	|   Diffie-Hellman Key Exchange Insufficient Group Strength
+	|     State: VULNERABLE
+	|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+	|       of insufficient strength, especially those using one of a few commonly
+	|       shared groups, may be susceptible to passive eavesdropping attacks.
+	|     Check results:
+	|       WEAK DH GROUP 1
+	|             Cipher Suite: TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+	|             Modulus Type: Safe prime
+	|             Modulus Source: mod_ssl 2.2.x/1024-bit MODP group with safe prime modulus
+	|             Modulus Length: 1024
+	|             Generator Length: 8
+	|             Public Key Length: 1024
+	|     References:
+	|_      https://weakdh.org
+	| ssl-poodle: 
+	|   VULNERABLE:
+	|   SSL POODLE information leak
+	|     State: VULNERABLE
+	|     IDs:  CVE:CVE-2014-3566  BID:70574
+	|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+	|           products, uses nondeterministic CBC padding, which makes it easier
+	|           for man-in-the-middle attackers to obtain cleartext data via a
+	|           padding-oracle attack, aka the "POODLE" issue.
+	|     Disclosure date: 2014-10-14
+	|     Check results:
+	|       TLS_RSA_WITH_AES_128_CBC_SHA
+	|     References:
+	|       https://www.securityfocus.com/bid/70574
+	|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+	|       https://www.imperialviolet.org/2014/10/14/poodle.html
+	|_      https://www.openssl.org/~bodo/ssl-poodle.pdf
+	|_sslv2-drown: 
+	445/tcp  open  microsoft-ds
+	5001/tcp open  commplex-link
+	8080/tcp open  http-proxy
+	| http-enum: 
+	|   /examples/: Sample scripts
+	|   /manager/html/upload: Apache Tomcat (401 Unauthorized)
+	|   /manager/html: Apache Tomcat (401 Unauthorized)
+	|_  /docs/: Potentially interesting folder
+	| http-slowloris-check: 
+	|   VULNERABLE:
+	|   Slowloris DOS attack
+	|     State: LIKELY VULNERABLE
+	|     IDs:  CVE:CVE-2007-6750
+	|       Slowloris tries to keep many connections to the target web server open and hold
+	|       them open as long as possible.  It accomplishes this by opening connections to
+	|       the target web server and sending a partial request. By doing so, it starves
+	|       the http server's resources causing Denial Of Service.
+	|       
+	|     Disclosure date: 2009-09-17
+	|     References:
+	|       http://ha.ckers.org/slowloris/
+	|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+	8081/tcp open  blackice-icecap
+
+	Host script results:
+	|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+	|_smb-vuln-ms10-054: false
+	|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+	| smb-vuln-regsvc-dos: 
+	|   VULNERABLE:
+	|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+	|     State: VULNERABLE
+	|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+	|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+	|       while working on smb-enum-sessions.
+	|_          
+
+	Nmap done: 1 IP address (1 host up) scanned in 207.90 seconds
+If you want to get all information for one script, such as `http-stored-xss` write this command 
+
+    nmap --script http-stored-xss 192.162.1.85
+We will get this output 
+
+	$ nmap --script http-stored-xss 192.168.1.85                                                                                                         130 ⨯
+	Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-16 12:35 EEST
+	Nmap scan report for owaspbwa.home (192.168.1.85)
+	Host is up (0.00060s latency).
+	Not shown: 991 closed ports
+	PORT     STATE SERVICE
+	22/tcp   open  ssh
+	80/tcp   open  http
+	|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+	139/tcp  open  netbios-ssn
+	143/tcp  open  imap
+	443/tcp  open  https
+	|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+	445/tcp  open  microsoft-ds
+	5001/tcp open  commplex-link
+	8080/tcp open  http-proxy
+	8081/tcp open  blackice-icecap
+
+	Nmap done: 1 IP address (1 host up) scanned in 42.24 seconds
