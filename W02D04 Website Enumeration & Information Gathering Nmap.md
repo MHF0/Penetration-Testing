@@ -334,4 +334,4 @@ We will get this output
 
 	Nmap done: 1 IP address (1 host up) scanned in 42.24 seconds\
 
-To git more information about nmap go to [nmap.org](https://nmap.org)
+To read more about nmap visit [nmap.org](https://nmap.org)
