@@ -5,7 +5,7 @@
 **In this lesson, we want to know how can we got an IP address from any website as we know the websites we visiting it, it's showing us a domain name like `www.example.com` we want to know what is the IP address that this website using it.**
 
 ### Ping
-The ping command is useful for determining the status of the network and various foreign hosts, tracking and isolating hardware and software problems, and testing, measuring, and managing networks. We can use it by typing `ping (our IP target)`
+The ping command is useful for determining the status of the network and various foreign hosts, tracking and isolating hardware and software problems, and testing, measuring, and managing networks. We can used it by typing `ping (our IP target)`
 
     ping 192.168.1.85
 
