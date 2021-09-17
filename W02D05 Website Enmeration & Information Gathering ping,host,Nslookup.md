@@ -43,3 +43,16 @@ Host IP_Address: This will display the domain details of the specified IP Addres
 	$ host tesla.com   
 	tesla.com has address 199.66.11.62
 	tesla.com mail is handled by 10 tesla-com.mail.protection.outlook.com.
+
+### Nslookup
+The **nslookup** command queries internet domain name servers in two modes. Interactive mode allows you to query name servers for information about various hosts and domains, or to print a list of the hosts in a domain. In noninteractive mode, the names and requested information are printed for a specified host or domain.
+
+It's like host, we can run this command `nslookup tesla.com`
+
+	$ nslookup tesla.com
+	Server:         192.168.1.1
+	Address:        192.168.1.1#53
+
+	Non-authoritative answer:
+	Name:   tesla.com
+	Address: 199.66.11.62
