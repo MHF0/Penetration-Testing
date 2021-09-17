@@ -73,7 +73,7 @@ Command injection is an attack in which the goal is execution of arbitrary comma
 
 Authentication is “broken” when attackers are able to compromise passwords, keys or session tokens, user account information, and other details to assume user identities. Due to poor design and implementation of identity and access controls, the prevalence of broken authentication is widespread.
 
-**Brute Force Attack**
+## Brute Force Attack
 
 A brute force attack uses trial-and-error to guess login info, encryption keys, or find a hidden web page. Hackers work through all possible combinations hoping to guess correctly.
 
