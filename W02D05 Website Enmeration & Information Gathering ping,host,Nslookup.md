@@ -8,7 +8,7 @@
 The ping command is useful for determining the status of the network and various foreign hosts, tracking and isolating hardware and software problems, and testing, measuring, and managing networks. We can use it by typing `ping (our IP target)`
 
     ping 192.168.1.85
-    
+
 As we see the output
 
 	PING 192.168.1.85 (192.168.1.85) 56(84) bytes of data.
@@ -18,7 +18,7 @@ As we see the output
 
 It is mean the server with the IP `192.168.1.85` is running now, we can scan like domain name not only IP address.  Let's scan `google.com`
 
-	$ ping google.com                                                    130 
+	$ ping google.com                                                    130x
 	PING google.com(mrs09s09-in-x0e.1e100.net (2a00:1450:4006:807::200e)) 56 data bytes
 	64 bytes from mrs08s05-in-x0e.1e100.net (2a00:1450:4006:807::200e): icmp_seq=1 ttl=115 time=133 ms
 	64 bytes from mrs08s05-in-x0e.1e100.net (2a00:1450:4006:807::200e): icmp_seq=2 ttl=115 time=55.7 ms
