@@ -16,7 +16,7 @@ As we see the output
 	64 bytes from 192.168.1.85: icmp_seq=2 ttl=64 time=0.438 ms
 	64 bytes from 192.168.1.85: icmp_seq=3 ttl=64 time=0.478 ms
 
-It is mean the server with the IP `192.168.1.85` is running now, we can scan like domain name not only IP address.  Let's scan `google.com`
+It is mean the server with the IP `192.168.1.85` is running now, we can scan as domain name not only IP address.  Let's scan `google.com`
 
 	$ ping google.com                                                    130x
 	PING google.com(mrs09s09-in-x0e.1e100.net (2a00:1450:4006:807::200e)) 56 data bytes
