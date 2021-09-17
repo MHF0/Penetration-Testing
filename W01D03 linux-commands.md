@@ -116,9 +116,6 @@ To use the `sudo` command, at the command prompt, enter:
 
     sudo command
 
-
-
-
 Replace `command` with the command for which you want to use `sudo`.
 
 The `sudo` command also makes it easier to practice the principle of the least privilege (PoLP), which is a computer security concept that helps control system access and potential system exploits and compromises. For more information about the `sudo` command, visit A. P. Lawrence's Using sudo page.
@@ -189,7 +186,6 @@ This will install ifconfig along with some other networking commands like arp, r
 
         ifconfig -s
 
-
 ![ifconfig-s](./img/ifconfig-s.png)
 
 - **-v :** Run the command in verbose mode – log more details about execution.
@@ -220,7 +216,6 @@ The **nslookup** command enters interactive mode when no arguments are given, or
 
     host [-aCdlriTWV] [-c class] [-N ndots] [-t type] [Wtime]
      [-R number] [-m flag] hostname [server]
-
 
 **host command without any option:** It will print the general syntax of the command along with the various options that can be used with the host command as well as gives a brief description about each option.
 
