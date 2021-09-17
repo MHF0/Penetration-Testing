@@ -56,3 +56,11 @@ It's like host, we can run this command `nslookup tesla.com`
 	Non-authoritative answer:
 	Name:   tesla.com
 	Address: 199.66.11.62
+
+### Whois
+
+Whois searches for an object in a WHOIS database. WHOIS is a query  and response protocol that is widely used for querying databases that store the registered users of an Internet resource, such as a domain name or an P  address block, but is also used for a wider range of other information. Let's scan `tesla.com`
+
+	whois tesla.com
+
+then we're getting some phones numbers, getting name servers and some postal code, we get information about  admins organization, city, phone number and some others information
