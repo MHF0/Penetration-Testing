@@ -4,6 +4,8 @@
 
 **In this lesson, we want to know how can we got an IP address from any website as we know the websites we visiting it, it's showing us a domain name like `www.example.com` we want to know what is the IP address that this website using it.**
 
+---
+
 ### Ping
 
 The ping command is useful for determining the status of the network and various foreign hosts, tracking and isolating hardware and software problems, and testing, measuring, and managing networks. We can used it by typing `ping (our IP target)`
@@ -31,6 +33,8 @@ It is mean the server with the IP `192.168.1.85` is running now, we can scan as 
 
 We can know what is the IP address that google using it, it is `mrs09s09-in-x0e.1e100.net` but the `ping` commands it doesn't necessary always telling the troth, some website might block thing probs, and we might know to be able to ping them however they could still be online, so don't worry if the ping does not work perfectly.
 
+---
+
 ### Host
 
 Host command is used for DNS (Domain Name System) lookup operations. In simple words, this command is used to find the IP address of a particular domain name or if you want to find out the domain name of a particular IP address, the host command becomes handy. You can also find more specific details of a domain by specifying the corresponding option along with the domain name.
@@ -46,6 +50,8 @@ Host IP_Address: This will display the domain details of the specified IP Addres
     tesla.com has address 199.66.11.62
     tesla.com mail is handled by 10 tesla-com.mail.protection.outlook.com.
 
+---
+
 ### Nslookup
 
 The **nslookup** command queries internet domain name servers in two modes. Interactive mode allows you to query name servers for information about various hosts and domains, or to print a list of the hosts in a domain. In noninteractive mode, the names and requested information are printed for a specified host or domain.
@@ -59,6 +65,8 @@ It's like host, we can run this command `nslookup tesla.com`
     Non-authoritative answer:
     Name:   tesla.com
     Address: 199.66.11.62
+
+---
 
 ### Whois
 
