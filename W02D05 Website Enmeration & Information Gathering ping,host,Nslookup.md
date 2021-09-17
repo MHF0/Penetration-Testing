@@ -1,6 +1,7 @@
 
 # **Website Enumeration & Information Gathering**
-## 5. Ping, Host and Nslookup
+
+## 5. Ping, Host, Nslookup, Whois and Whatweb
 
 **In this lesson, we want to know how can we got an IP address from any website as we know the websites we visiting it, it's showing us a domain name like `www.example.com` we want to know what is the IP address that this website using it.**
 
