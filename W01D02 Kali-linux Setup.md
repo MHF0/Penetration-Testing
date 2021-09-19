@@ -4,13 +4,17 @@
 
 By the end of this lesson, you will be familiar with the following:
 - Createing TryHackMe Account
-- Kali Linux Installtion
+- Kali Linux & Kali Linux Installtion
 - VirtualBox machine
 - Install Kali Linux in VirtualBox
 
 ## Createing TryHackMe Account
 
 We will go to [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
+
+## What is Klai Linux
+
+Kali Linux (formerly known as BackTrack Linux) is an open-source, Debian-based Linux distribution aimed at advanced Penetration Testing and Security Auditing. Kali Linux contains several hundred tools targeted towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering. Kali Linux is a multi platform solution, accessible and freely available to information security professionals and hobbyists.
 
 ## Kali Linux Installtion
 
