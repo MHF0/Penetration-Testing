@@ -1,8 +1,14 @@
-## Virtual Lap Installation
+# Virtual Lap Installation
 
-A virtual Lab is a simulated lab environment typically implemented as a software program which allows the users to perform their experiments.
+## High Level Goals
 
-### Createing TryHackMe Account
+By the end of this lesson, you will be familiar with the following:
+- Createing TryHackMe Account
+- Kali Linux Installtion
+- VirtualBox machine
+- Install Kali Linux in VirtualBox
+
+## Createing TryHackMe Account
 
 We will go to [https://tryhackme.com](https://tryhackme.com). And click to Join Now to create new account.
 
@@ -16,7 +22,7 @@ We will go to [https://tryhackme.com](https://tryhackme.com). And click to Join 
 
 ![downloadButton](./img/kaliLunx-3.png)
 
-### Now we can dowload the VirtualBox machine
+## VirtualBox machine
 
 Go to [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) and click on Windows hosts
 

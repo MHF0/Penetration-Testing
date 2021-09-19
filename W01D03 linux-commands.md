@@ -1,6 +1,6 @@
 # Linux commands
 
-## What you’ll learn
+## High Level Goals
 
 By the end of this lesson, you will be familiar with the following:
 
