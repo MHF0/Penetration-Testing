@@ -1,5 +1,15 @@
 # OWASP Installtion
 
+## High Level Goals
+
+By the end of this lesson, you will be familiar with the following:
+- OWASP
+- Install OWASP
+
+## OWASP
+
+The Broken Web Applications (BWA) Project produces a Virtual Machine running a variety of applications with known vulnerabilities for those interested in: learning about web application security. Testing manual assessment techniques. Testing automated tools. Testing source code analysis tools.
+
 ## Install OWASP
 
 1. Go to [https://sourceforge.net/projects/owaspbwa](https://sourceforge.net/projects/owaspbwa).
