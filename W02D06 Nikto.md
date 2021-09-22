@@ -49,11 +49,11 @@ Nikto is not designed as a stealthy tool. It will test a web server in the quick
    Write this command `nikto -host 192.168.1.85 -port 8081`
    you will get some result that we know it like 
 
-      + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS 
-      + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
+         + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS 
+         + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
 
    but we got some interesting directors like 
 
-      + OSVDB-3092: /admin/: This might be interesting... 
-      + OSVDB-3092: /css/: This might be interesting... 
-      + /admin/index.html: Admin login page/section found.
+         + OSVDB-3092: /admin/: This might be interesting... 
+         + OSVDB-3092: /css/: This might be interesting... 
+         + /admin/index.html: Admin login page/section found.
