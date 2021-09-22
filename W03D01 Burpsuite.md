@@ -22,9 +22,11 @@ To configuration your Burepsuite follow these steps:
 		burpsuite
 
 **If** you get these issue 
+
 ![burp1](/img/burp1.png)
 
 click in `OK`, then do these steps
+
 ![burp2](/img/burp2.png)
 
 ![burp3](/img/burp3.png)
