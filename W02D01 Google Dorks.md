@@ -1,6 +1,6 @@
 # Website Enumeration & Information Gathering
 
-## 2. Google Dorks
+## 1. Google Dorks
 
 ### What is Google Dorks
 
