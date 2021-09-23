@@ -1,6 +1,6 @@
 # Website Enumeration & Information Gathering
 
-## 3. Nikto
+## 6. Nikto
 
 ### What is Nikto
 
