@@ -1,6 +1,6 @@
 # Website Enumeration & Information Gathering
 
-## 4. Nmap
+## 5. Nmap
 
 **What is Nmap**
 
