@@ -1,6 +1,6 @@
 # Website Enumeration & Information Gathering
 
-## 1. Dirb
+## 4. Dirb
 
 ### What is DIRP
 
