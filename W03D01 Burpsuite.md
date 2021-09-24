@@ -68,3 +68,8 @@ Now if you check again, you can visit the websites with https, you can visit Fac
 ## Burp Suite Intercept
 
 The Intercept tab is used to display and modify HTTP and WebSocket messages that pass between your browser and web servers. The ability to monitor, intercept and modify all messages is a core part of Burp's user-driven workflow. In Burp Proxy's options, you can configure interception rules to determine exactly what HTTP requests and responses are stalled for interception (for example, in-scope items, items with specific file extensions, requests with parameters, etc.). You can also configure which WebSocket messages  are intercepted.
+
+### Controls
+
+When an intercepted message is being displayed, details of the destination server are shown at the top of the panel. For HTTP requests, you can manually edit the target server to which the request will be sent, by clicking on the server caption or the button next to it.
+
