@@ -73,3 +73,14 @@ The Intercept tab is used to display and modify HTTP and WebSocket messages that
 
 When an intercepted message is being displayed, details of the destination server are shown at the top of the panel. For HTTP requests, you can manually edit the target server to which the request will be sent, by clicking on the server caption or the button next to it.
 
+- **Forward**  - When you have reviewed and (if required) edited the message, click "Forward" to send the message on to the server or browser.
+
+- **Drop**  - Use this to abandon the message so that it is not forwarded.
+
+- **Interception is on/off**  - This button is used to toggle all interception on and off. If the button is showing "Intercept is on", then messages will be intercepted or automatically forwarded according to the configured options for interception of HTTP and WebSocket messages. If the button is showing "Intercept is off" then all messages will be automatically forwarded.
+
+- **Action**  - This shows a menu of available actions that can be performed on the currently displayed message. These are the same options that appear on the context menu of the intercepted message display.
+
+- **Comment field**  - This lets you add a comment to interesting items, to easily identify them later. Comments added in the intercept panel will appear in the relevant item in the Proxy history. Further, if you add a comment to an HTTP request, the comment will appear again if the corresponding response is also intercepted.
+
+- **Highlight**  - This lets you apply a colored highlight to interesting items. As with comments, highlights will appear in the Proxy history and on intercepted responses.
