@@ -3,9 +3,11 @@
 ## High Level Goals
 
 By the end of this lesson, you will be familiar with the following:
+
 - Burp Suite
-- Burepsuite Configuration
-- Basics option of Burp Suite
+- Burp Suite Intercept
+- Burp Suite Intruder
+- Burp Suite Repeater
 
 ## what is Burp Suite
 
@@ -60,3 +62,9 @@ now download the certificate and go again in Firefox setting go to **Privacy & S
 ![burp12](/img/burp12.png)
 
 Now if you check again, you can visit the websites with https, you can visit Facebook
+
+---
+
+## Burp Suite Intercept
+
+The Intercept tab is used to display and modify HTTP and WebSocket messages that pass between your browser and web servers. The ability to monitor, intercept and modify all messages is a core part of Burp's user-driven workflow. In Burp Proxy's options, you can configure interception rules to determine exactly what HTTP requests and responses are stalled for interception (for example, in-scope items, items with specific file extensions, requests with parameters, etc.). You can also configure which WebSocket messages  are intercepted.
