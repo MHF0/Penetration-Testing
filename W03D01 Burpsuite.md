@@ -84,3 +84,35 @@ When an intercepted message is being displayed, details of the destination serve
 - **Comment field**  - This lets you add a comment to interesting items, to easily identify them later. Comments added in the intercept panel will appear in the relevant item in the Proxy history. Further, if you add a comment to an HTTP request, the comment will appear again if the corresponding response is also intercepted.
 
 - **Highlight**  - This lets you apply a colored highlight to interesting items. As with comments, highlights will appear in the Proxy history and on intercepted responses.
+
+-----
+## Burp Intruder
+
+Burp Intruder is a tool for automating customized attacks against web applications. It is extremely powerful and configurable, and can be used to perform a huge range of tasks, from simple brute-force guessing of web directories through to active exploitation of complex blind SQL injection vulnerabilities.
+
+### How Intruder works
+
+Burp Intruder works by taking an HTTP request (called the "base request"), modifying the request in various systematic ways, issuing each modified version of the request, and analyzing the application's responses to identify interesting features.
+
+For each attack, you must specify one or more sets of payloads and the positions in the base request where the payloads are to be placed. Numerous methods of generating payloads are available (including simple lists of strings, numbers, dates, brute force, a bit flipping, and many others). Payloads can be placed into payload positions using different algorithms, Various tools are available to help analyze the results and identify interesting items for further investigation.
+
+### Saving an attack
+
+Intruder attacks are not saved to a project file by default. If you are using a project file, you can save attacks by doing any of the following:
+
+-   From the Intruder attack window, click on the "Save" tab. Here, you can save to a project file, or save the results table, server responses or configuration of the attack.
+
+-   From the Intruder attack window, click on the "Options" tab. Under "Save Options", select the checkbox to save the attack to a project file. This can be done before or during an attack.
+
+-   From the Dashboard, scroll to the attack in the task list and click on the save icon. This can be done before or during an attack.
+
+-   In Intruder, select the "Options" tab. Under "Save Options", select the checkbox to save the attack to a project file.
+-   When an attack has finished, Burp will give you the option of saving the attack to a project file if you close the attack window.
+
+Once an attack is saved to a project file, the state of the attack is constantly saved from that point on. Saved attacks can be closed, and re-opened later from the task list of the Dashboard.
+
+Intruder does not save attacks to project files by default, as saving many attacks can result in large project files. We recommend that you only save attacks to project files once you have found something interesting. Note that this opt-in saving is unique to Intruder: other tasks (such as scans) have a smaller effect on project file size and are saved to project files by default.
+
+**Note:**  Intruder attacks can no longer be saved to state files. Legacy state files can still be loaded, however. To load a legacy state file, Select the top level Intruder tab and click on "Open saved attack".
+
+**Note:**  Missing information in a row on the attack results page may mean that you shut down Burp Suite while an attack was in progress, and one of the requests was not sent.
